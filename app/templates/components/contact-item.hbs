@@ -1,0 +1,9 @@
+<a href="/get/{{c.id}}"><img src="{{c.picture}}" /></a>
+<h3>Name: {{c.name}}</h3>
+<p class="phone">Phone: {{c.phone}}</p>
+<p class="email">Email: {{c.email}}</p>
+<p class="address">Address: {{c.address}}</p>
+<div class="remove-contact">
+	<button {{action "removeContact" c.id on="click"}}>Remove contact</button>
+</div>
+{{yield}}

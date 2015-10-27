@@ -1,0 +1,11 @@
+<h1>List of contacts:</h1>
+<div class="add-contact">
+	<button {{action "addContact" on="click"}}>Add contact</button>
+</div>
+<ul>
+	{{#each model as |contact|}}
+		{{#if contact.picture}}
+			{{contact-item c=contact action="removeContact"}}
+		{{/if}}
+	{{/each}}
+</ul>
